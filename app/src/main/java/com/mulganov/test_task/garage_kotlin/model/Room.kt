@@ -61,5 +61,6 @@ class Room {
         for (i in 0..n){
             elements.add(Element.random())
         }
+
     }
 }

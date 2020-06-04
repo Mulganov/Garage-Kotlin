@@ -11,6 +11,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat.getSystemService
 import com.mulganov.test_task.garage_kotlin.db.Element
 import com.mulganov.test_task.garage_kotlin.model.Room
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainPresent {
@@ -84,6 +85,16 @@ class MainPresent {
 
         room.elements.removeAt(position)
         room.save()
+
+        activity.reloadList(room.elements)
+    }
+
+    fun reload() {
+        room.elements = ArrayList();
+
+        room.generateList(5)
+
+        room.save();
 
         activity.reloadList(room.elements)
     }

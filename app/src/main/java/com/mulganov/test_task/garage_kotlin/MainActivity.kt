@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity() {
 
         present = MainPresent(this);
 
+        findViewById<View>(R.id.reload).setOnClickListener { present.reload() }
+
     }
 
     override fun onResume() {
