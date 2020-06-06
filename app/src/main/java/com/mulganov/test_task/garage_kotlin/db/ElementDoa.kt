@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
+import com.mulganov.test_task.garage_kotlin.model.Element
 
 @Dao
 interface ElementDoa {

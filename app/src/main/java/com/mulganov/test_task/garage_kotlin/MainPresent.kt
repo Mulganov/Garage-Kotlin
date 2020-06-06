@@ -4,14 +4,11 @@ import android.content.Context
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
-import android.view.inputmethod.InputMethodManager
 import android.widget.LinearLayout
 import android.widget.PopupWindow
 import android.widget.TextView
-import androidx.core.content.ContextCompat.getSystemService
-import com.mulganov.test_task.garage_kotlin.db.Element
+import com.mulganov.test_task.garage_kotlin.model.Element
 import com.mulganov.test_task.garage_kotlin.model.Room
-import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainPresent {

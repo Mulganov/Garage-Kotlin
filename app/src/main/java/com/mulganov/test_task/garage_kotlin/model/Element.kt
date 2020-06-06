@@ -1,4 +1,4 @@
-package com.mulganov.test_task.garage_kotlin.db
+package com.mulganov.test_task.garage_kotlin.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -10,13 +10,15 @@ class Element {
         fun random(): Element {
             var el = Element();
 
-            el.name = "name: типо рандомное тут имя"
-            el.telephon = "+380";
+            el.name = "типо рандомное имя"
+            el.telephon = "";
 
-            for (i in 0..9){
-                var r = Random.nextInt(10);
-                el.telephon += r
+            for (i in 0..7){
+                var r = Random.nextInt(90-65) + 65;
+                el.telephon += r.toChar()
             }
+
+            el.telephon = el.telephon!!.toLowerCase() + "@gmail.com";
 
             return el;
         }

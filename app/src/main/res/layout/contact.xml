@@ -35,6 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:ems="10"
+        android:includeFontPadding="false"
         android:inputType="textPersonName"
         android:text="Name"
         app:layout_constraintEnd_toEndOf="@+id/contact_name"

@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ListView
 import com.mulganov.job.kotlin.list.MainAdaptor
-import com.mulganov.test_task.garage_kotlin.db.Element
+import com.mulganov.test_task.garage_kotlin.model.Element
 
 class MainActivity : AppCompatActivity() {
 

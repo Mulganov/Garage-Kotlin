@@ -3,7 +3,6 @@ package com.mulganov.test_task.garage_kotlin.model
 import androidx.room.Room
 import com.mulganov.test_task.garage_kotlin.MainPresent
 import com.mulganov.test_task.garage_kotlin.db.DB
-import com.mulganov.test_task.garage_kotlin.db.Element
 
 class Room {
 
